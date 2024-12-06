@@ -18,21 +18,24 @@
     }
     .myCard{
         transition: 0.7s;
+        background: linear-gradient(-1deg, #534590, #000000);
     }
     .myCard:hover {
-        border-color:#303958;
+        /* border-color: linear-gradient(-1deg, #534590, #000000); */
     }
     .myCardTwo{
         padding: 1rem;
-        background-color: #303958;
+        background: linear-gradient(-1deg, #534590, #000000);
     }
     .styleBorder{
         text-decoration: underline;
-        text-decoration-color: #89cff0;
+        color: #fff;
+        text-decoration-color: #fff;
     }
     .styleParagraph{
         line-height: 2.5;
-        direction: rtl;
+        color:#fff;
+        direction: ltr;
     }
     .styleParagraph < p{
         line-height: 2.5;
@@ -55,7 +58,7 @@
 </style>
 
 <section class="header-slider mb-5">
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-md-12">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -96,7 +99,8 @@
                 </button>
             </div>
         </div>
-    </div>
+    </div> --}}
+
 </section>
 
 <section class="about-us mb-5">
@@ -107,6 +111,7 @@
             </div>
         </div>
         <div class="row mb-5">
+
             <div class="col-md-6 d-flex justify-content-center align-items-center">
                 <?php $ext = pathinfo($settings[6]->image, PATHINFO_EXTENSION); ?>
                 @if($settings[6]->image != null && ($ext == 'svg' || $ext == 'png' || $ext == 'jpeg' || $ext == 'jpg'))
@@ -137,10 +142,8 @@
 
         <div class="row mb-5 d-flex justify-content-center">
             <div class="col-md-12">
-                <h5 class="text-center" style="line-height: 2">
-                    وإدراكًا منّا لحاجة عملاءنا وأنماط الحياة السريعة التي تفرض يوميًا التوجه نحو مجالات بعينها، فنحن
-
-                    في شركة أبو الخير للترجمة المعتمدة نوفر خدماتنا في كافة المجالات
+                <h5 class="text-center text-white" style="line-height: 2">
+                    Text Here
                 </h5>
             </div>
         </div>
@@ -149,7 +152,7 @@
             @foreach ($services as $service)
                 <div class="col-md-4 mb-3">
                     <a href="/show/service/{{ $service->id }}" style="text-decoration: none;">
-                        <div class="card myCard" style="padding:0.5rem;">
+                        <div class="card myCard" style="padding:1rem;">
                             <div class="text-center">
                                 @if($service->icon != null)
                                     <img src="{{ asset('uploads/' . $service->icon) }}" width="80" height="80" alt="">
@@ -159,7 +162,7 @@
                             </div>
                             <div class="card-body text-center">
 
-                            <h5 class="card-title">{{ $service->title }}</h5>
+                            <h5 class="card-title text-white">{{ $service->title }}</h5>
                             <!--<div>{!! \Str::limit($service->description, 30) !!}</div>-->
                             </div>
                         </div>
@@ -199,13 +202,13 @@
     </div>
 </section>
 
-<div class="row mb-5">
+{{-- <div class="row mb-5">
     <div class="col-md-12 d-flex justify-content-center">
-        <h3 class="text-center styleBorder">تواصل معنا</h3>
+        <h3 class="text-center styleBorder">Contact Us</h3>
     </div>
-</div>
+</div> --}}
 
-<section class="contact-us mb-5 pt-5" style="background-color: #4071a1">
+{{-- <section class="contact-us mb-5 pt-5" style="background: linear-gradient(-1deg, #191330, #000000);">
     <div class="container">
         <div class="row mb-3">
             <div class="col-md-6">
@@ -249,7 +252,7 @@
 
         </div>
     </div>
-</section>
+</section> --}}
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

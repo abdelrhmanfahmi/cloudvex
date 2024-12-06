@@ -3,7 +3,7 @@
         <?php $settings = \App\Models\Setting::all(); ?>
         <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="">
+                {{-- <div class="">
                     <div class="logo">
                         <a href="/">
                             @if($settings[7]->image != null)
@@ -13,14 +13,14 @@
                             @endif
                         </a>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="additionl-data mt-11">
-                    <h2>تواصل معنا</h2>
+                <div class="titleHolder">
+                    <h2>Contact Us</h2>
                 </div>
-                <p class="text-gray-dark">
+                {{-- <p class="text-gray-dark">
                     {{ $settings[11]->value }}
-                </p>
+                </p> --}}
 
                 <div>
                     <div class="media aligned-row mt-11">
@@ -28,7 +28,7 @@
                             <img src="{{ asset('assets/images/Group56027.png') }}" width="60px" height="60px" />
                         </div>
                         <div class="info mx-2">
-                            <p class="text-gray gray-only">لديك اسئلة؟</p>
+                            <p class="text-gray gray-only">You Have Questions ?</p>
                             <p class="text-gray-dark">{{ $settings[1]->value }}</p>
                         </div>
                     </div>
@@ -37,24 +37,24 @@
 
             <div class="col-sm-6 col-md-6 col-lg-5">
                 <div class="titleHolder">
-                    <h2>روابط سريعة</h2>
+                    <h2>Fast Links</h2>
                 </div>
                 <ul>
                     <li>
-                        <a class="text-gray" href="/about">عن الموقع</a>
+                        <a class="text-gray" href="/about">About Us</a>
                     </li>
+                    {{-- <li>
+                        <a class="text-gray" href="/show/service/1">Services</a>
+                    </li> --}}
                     <li>
-                        <a class="text-gray" href="/show/service/1">خدماتنا</a>
-                    </li>
-                    <li>
-                        <a class="text-gray" href="/contact">تواصل معنا</a>
+                        <a class="text-gray" href="/contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
 
             <div class="col-sm-6 colmd-6 col-lg-3">
                 <div class="titleHolder">
-                    <h2>روابط سوشيال ميديا</h2>
+                    <h2>Social Media links</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-2">
@@ -86,15 +86,15 @@
                 </div>
             </div>
 
-            <hr />
+            {{-- <hr />
 
             <div class="col-sm-12 col-md-12 d-flex justify-content-center w-100">
                 {!! $settings[16]->value !!}
-            </div>
+            </div> --}}
 
             <div class="text-center">
                 <hr />
-                <p class="text-gray">© 2024 حقوق النشر لوكالة أبوالخير. كل الحقوق محفوظة. <i class="fas fa-heart fa-lg text-white"></i> <a href="/"> <span class="styleFooterText">ابو الخير للسفريات</span></a></p>
+                <p class="text-gray">© 2024 Copyright reserved to cloudvex <i class="fas fa-heart fa-lg text-white"></i> <a href="/"> <span class="styleFooterText">Cloudvex</span></a></p>
             </div>
         </div>
     </div>

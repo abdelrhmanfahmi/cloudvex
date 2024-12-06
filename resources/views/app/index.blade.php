@@ -7,14 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="{{asset('assets/images/firstLogo.JPG')}}"  />
-    <title>AboElKhier</title>
+    <title>Cloudvex</title>
     <style>
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
             overflow-x: hidden;
-            background-color: #d3e2f1;
+            background: linear-gradient(-1deg, #534590, #000000);
         }
         .navbar-nav {
             float:none;
@@ -23,10 +23,16 @@
             text-align: center;
         }
 
+        .navbar{
+            background: linear-gradient(-1deg, #191330, #000000);
+        }
+
         .navbar-nav > li {
             display: inline-flex;
             float:none;
+            padding-left: 3rem;
         }
+
         @media (max-width: 912px) {
             .navbar-nav {
                 float:none;
@@ -39,34 +45,34 @@
             }
         }
         .styleFooterText{
-        color:#674df0;
-    }
-    footer {
-        background: #303958;
-        color: #fff;
-    }
+            color:#674df0;
+        }
+        footer {
+            background: linear-gradient(-1deg, #534590, #000000);
+            color: #fff;
+        }
 
-    .titleHolder {
-        padding: 20px 0
-    }
+        .titleHolder {
+            padding: 20px 0
+        }
 
-    a {
-        line-height: 40px
-    }
+        a {
+            line-height: 40px
+        }
 
-    .text-gray,
-    .text-gray-dark {
-        color: #fff !important;
-    }
+        .text-gray,
+        .text-gray-dark {
+            color: #fff !important;
+        }
 
-    .gray-only {
-        color: $gray !important;
-    }
-    .aligned-row{
-        display: flex;
-        align-items: center;
-        justify-items: center;
-    }
+        .gray-only {
+            color: $gray !important;
+        }
+        .aligned-row{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
     </style>
 </head>
 <body>

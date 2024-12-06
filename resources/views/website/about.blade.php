@@ -8,16 +8,18 @@
     }
     .styleParagraph{
         line-height: 2.5;
-        direction: rtl;
+        direction: ltr;
     }
 
     .styleParagraph > p{
         line-height: 2.5;
-        direction: rtl;
+        color: #fff;
+        direction: ltr;
     }
     .styleBorder{
         text-decoration: underline;
-        text-decoration-color: #89cff0;
+        color:#fff;
+        text-decoration-color: #fff;
     }
 </style>
 

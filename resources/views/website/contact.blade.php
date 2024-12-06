@@ -13,57 +13,57 @@
         color: #fff;
     }
     .styleImageTwo{
-        width: 100%;
-        height: 100%;
+        width: 74%;
+        height: 77%;
     }
 </style>
 
 <div class="row mb-5 pt-5">
     <div class="col-md-12 d-flex justify-content-center">
-        <h3>تواصل معنا</h3>
+        <h3 class="text-white">Contact Us</h3>
     </div>
 </div>
 
-<section class="contact-us mb-5 pt-5" style="background-color: #4071a1">
+<section class="contact-us mb-5 pt-5" style="background: linear-gradient(-1deg, #322564, #000000);">
     <div class="container">
         <div class="row mb-3">
             <div class="col-md-6">
                 <form id="submitContact">
                     <div class="row mb-3">
                         <div class="col-md-6 mb-3">
-                            <label>الاسم</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="ادخل الاسم">
+                            <label>Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label>البريد الإلكتروني</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="ادخل البريد الإلكتروني">
+                            <label>E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-6 mb-3">
-                            <label>رقم الهاتف</label>
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="ادخل رقم الهاتف">
+                            <label>Phone</label>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label>الموضوع</label>
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="ادخل الموضوع">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-12 mb-3">
-                            <label>الرسالة</label>
-                            <textarea name="message" class="form-control" id="message" cols="30" placeholder="ادخل رسالتك" rows="10" style="resize: none"></textarea>
+                            <label>Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-12 mb-3">
-                            <button class="btn styleBtnSubmit w-100">حفظ</button>
+                            <label>Message</label>
+                            <textarea name="message" class="form-control" id="message" cols="30" placeholder="Message" rows="10" style="resize: none"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12 mb-3">
+                            <button class="btn styleBtnSubmit w-100">Save</button>
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="col-md-6 d-flex justify-content-center">
-                <img src="{{ asset('assets/images/callerService.png') }}" class="styleImageTwo" alt="">
+            <div class="col-md-6 d-flex justify-content-end">
+                <img src="{{ asset('assets/images/phone.png') }}" class="styleImageTwo" alt="">
             </div>
 
         </div>

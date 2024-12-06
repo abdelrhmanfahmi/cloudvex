@@ -10,17 +10,19 @@
     .containerStyleNew {
         position: relative;
         text-align: center;
-        color: white;
+        color: #fff;
     }
     .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        /* position: absolute; */
+        /* top: 50%;
+        left: 50%; */
+        /* transform: translate(-50%, -50%); */
+        margin-top: 3rem;
     }
     .styleParagraphService{
         line-height: 2;
-        direction: rtl;
+        color:#fff;
+        /* direction: ltr; */
     }
     .styleImage{
         width: 50%;
@@ -31,10 +33,10 @@
 <div class="row mb-5">
     <div class="col-md-12">
         <div class="containerStyleNew">
-            <img src="https://www.trusttranslations.net/images/resources/banner.webp" class="styleBackgroundImage" alt="">
-            <div class="centered">
+            {{-- <img src="https://www.trusttranslations.net/images/resources/banner.webp" class="styleBackgroundImage" alt=""> --}}
+            {{-- <div class="centered">
                 <h1>{{ $service->title }}</h1>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
@@ -57,9 +59,11 @@
             </div>
         </div>
 
-        <div class="row mb-5 d-flex justify-content-center">
-            <div class="col-md-12">
-                <h3 class="text-danger" style="direction: rtl;">{{ $service->title }}</h3>
+        <div class="row mb-5">
+            <div class="col-md-12 d-flex justify-content-center mb-3">
+                <h3 class="text-white">{{ $service->title }}</h3>
+            </div>
+            <div class="col-md-12 d-flex justify-content-center">
                 <div class="styleParagraphService">{!! $service->description !!}</div>
             </div>
         </div>
